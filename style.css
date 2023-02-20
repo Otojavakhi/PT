@@ -1,0 +1,99 @@
+.main-container {
+  position: relative;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 600px 1fr;
+  padding: 40px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #05102b;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  height: 80px;
+  width: 100%;
+  background-color: #021b2b;
+}
+
+nav > img {
+  cursor: pointer;
+  margin: 30px 0px;
+  height: 1em;
+}
+
+.main-container > h1 {
+  color: white;
+}
+
+.c-b-container {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+}
+
+#b-container {
+  position: absolute;
+}
+
+#b-apartaments-container {
+  position: absolute;
+}
+
+/* #b-polygon {
+  position: absolute;
+} */
+
+svg {
+  position: absolute;
+}
+
+/* polygon:hover {
+  fill: rgb(114, 214, 114);
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.poly-shape:hover {
+  fill: rgb(114, 234, 114);
+  cursor: pointer;
+  pointer-events: all;
+  opacity: 0.5;
+} */
+
+.poly-shape {
+  stroke: rgba(255, 255, 255, 0.75);
+  stroke-width: 0;
+  fill: transparent;
+  stroke-dasharray: 0;
+  stroke-linecap: round;
+  opacity: 1;
+  z-index: 2;
+  cursor: pointer;
+  /* pointer-events: all; */
+  /* transition: all 0.15s cubic-bezier(0.55, 0, 0.1, 1); */
+}
+
+#c-b-polygon {
+  fill: rgba(0, 0, 0, 0.4);
+}
+
+#c-b-polygon:hover {
+  fill: lightgreen;
+  opacity: 0.5;
+}
+
+.poly-shape:hover {
+  fill: lightgreen;
+  opacity: 0.5;
+}
